@@ -7,7 +7,7 @@ module "eks" {
   cluster_name = var.eks_cluster_name
   subnets = var.eks_subnets
 
-  node_groups ={
+  node_groups = {
     eks_nodes = {
         desired_capacity = 2
         max_capacity = 3

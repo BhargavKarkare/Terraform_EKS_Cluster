@@ -2,7 +2,7 @@ provider "aws" {
   region = var.aws_region
 }
 
-module "eks" {
+module "eks_cluster" {
   source = "./eks_tf"
   aws_region = var.aws_region
   eks_cluster_name = var.eks_cluster_name

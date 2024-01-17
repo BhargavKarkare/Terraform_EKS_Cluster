@@ -1,5 +1,5 @@
 variable "aws_region" {
-  description = "AWs region"
+  description = "AWS region"
   type = string
 }
 
@@ -9,6 +9,6 @@ variable "eks_cluster_name" {
 }
 
 variable "eks_subnets" {
-  description = "List of subnets for EKS cluster"
+  description = "LSist of subnets for EKS cluster"
   type = list(string)
 }
