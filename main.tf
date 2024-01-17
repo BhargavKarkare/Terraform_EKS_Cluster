@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "eks_cluster" {
-  source = "./eks"
+  source = "./eks_tf"
   aws_region = var.aws_region
   eks_cluster_name = var.eks_cluster_name
   eks_subnets = var.eks_subnets
