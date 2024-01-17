@@ -2,14 +2,14 @@ provider "aws" {
   region = var.aws_region
 }
 
-module "eks_cluster" {
+module "eks" {
   source = "./eks"
   aws_region = var.aws_region
   eks_cluster_name = var.eks_cluster_name
   eks_subnets = var.eks_subnets
 }
 
-module "iam_roles" {
+module "iam_eks_role" {
   source = "./iam"
   eks_cluster_name = var.eks_cluster_name
   eks_subnets = var.eks_subnets
